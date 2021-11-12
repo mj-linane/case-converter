@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+          rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Case Converter</title>
+</head>
+<body>
+<div class="title is-1 my-5">Case Converter</div>
+
+<section
+        class="section is-flex is-align-content-center is-flex-direction-column"
+        id="content">
+    <label for="text"></label><textarea class="textarea is-primary" cols="30"
+                                        id="text"
+                                        name="text"
+                                        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra ante elementum ornare imperdiet. Integer consectetur nulla arcu, vel fermentum sapien gravida ac. Sed aliquam ligula id cursus aliquam. Nulla a purus ut ex finibus fringilla id eget sem. Suspendisse potenti. In pretium mauris at quam congue convallis. Praesent vitae lacus facilisis, sollicitudin tortor vitae, interdum massa. Suspendisse a pretium libero. In consectetur turpis ac libero accumsan auctor. Sed enim libero, aliquam vitae sem a, aliquam imperdiet augue. Mauris accumsan non mi eget maximus. Curabitur porta felis mauris, id gravida tellus vestibulum vel. Pellentesque vulputate malesuada tortor in mattis. Cras ac dapibus tortor, eget blandit quam. Etiam sit amet posuere quam, vitae consectetur ex."
+                                        rows="10"></textarea>
+    <div class="container is-flex is-align-content-center mx-auto my-3">
+
+        <div class="columns">
+            <div class="column">
+                <button class="button is-dark" id="upper-case">Upper Case
+                </button>
+            </div>
+            <div class="column">
+                <button class="button is-dark" id="lower-case">Lower Case
+                </button>
+            </div>
+            <div class="column">
+                <button class="button is-dark" id="proper-case">Proper Case
+                </button>
+            </div>
+            <div class="column">
+                <button class="button is-dark" id="sentence-case">Sentence Case
+                </button>
+            </div>
+        </div>
+    </div>
+
+        <button class="button is-primary mx-auto my-3" id="save-text-file">Save
+        </button>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
